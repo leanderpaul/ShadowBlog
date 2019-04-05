@@ -1,0 +1,22 @@
+{
+  "name": "shadowblog-server",
+  "version": "1.0.0",
+  "description": "A Blogging application created by shadows using NodeJs, React and MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Shadow Lord",
+  "license": "MIT",
+  "dependencies": {
+    "connect-mongo": "^2.0.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.4.20",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
+}
