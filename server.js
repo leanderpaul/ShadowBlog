@@ -25,8 +25,8 @@ app.use(cors());
 app.use('/', api);
 
 if (env === 'production') {
-    app.use(express.static('Client/build'));
+    app.use(express.static('build'));
     app.get('*', (req,res) => {
-        res.sendFile('./Client/build/index.html');
+        res.sendFile(path.join(__dirname + '/build/index.html'));
     });
 }
