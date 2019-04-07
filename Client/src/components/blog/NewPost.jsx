@@ -30,7 +30,7 @@ class NewPost extends Component {
     handleSubmitPost = () => {
         const postData = this.state
         postData.user = this.props.user
-        Axios.post('http://localhost:8080/new-post', postData)
+        Axios.post('/new-post', postData)
             .then(res => {
                 if (res.data.success === true) {
                     // toast.success(res.data.msg, {

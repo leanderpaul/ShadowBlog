@@ -22,7 +22,7 @@ class Login extends Component {
             username: this.state.username,
             password: this.state.password
         };
-        Axios.post('http://localhost:8080/login',userData)
+        Axios.post('/login',userData)
             .then((res) => {
                 console.log(res.data);
                 if(res.data.success) {

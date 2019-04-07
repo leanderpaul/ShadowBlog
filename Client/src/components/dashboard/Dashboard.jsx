@@ -12,7 +12,7 @@ class Dashboard extends Component {
 
     constructor(props) {
         super(props)
-        Axios.get('http://localhost:8080/all-blogs')
+        Axios.get('/all-blogs')
             .then(res => {
                 if (res.data.err) {
                     console.log(res.data)

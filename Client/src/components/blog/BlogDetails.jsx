@@ -13,7 +13,7 @@ class BlogDetails extends Component {
 
     constructor(props) {
         super(props)
-        Axios.get('http://localhost:8080/blog/' + props.match.params.id)
+        Axios.get('/blog/' + props.match.params.id)
             .then(res => {
                 if (res.data.err) {
                     console.log(res.data)

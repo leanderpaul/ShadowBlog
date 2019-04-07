@@ -31,7 +31,7 @@ class Register extends Component {
             password: this.state.password
         };
 
-        axios.post('http://127.0.0.1:8080/register', userData)
+        axios.post('/register', userData)
             .then((res) => {
                 if (res.data)
                     alert(res.data.msg);
